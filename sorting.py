@@ -11,6 +11,10 @@ def swap(alist, index):
     return (alist) # returns the swapped alist
 
 def bsort(alist): #sets varible 
+    ''' 
+    This is a function, it needs a function comment
+    '''
+    
     swaps = True # swaps to true
     while swaps: # while swaps is true
         swaps = False # set swaps to false
