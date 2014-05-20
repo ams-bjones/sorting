@@ -24,8 +24,8 @@ Variables used | type | discussion
 ----|----|----
 alist | a list of integers or floats| this list is the input, and it is also the out put once the swap has taken place.
 index | integer |  this is the position of the item in the list to be swapped
-a | Integer | This is a temporary variable which stores the first item to be swapped, at index in the list
-b | Integer | This is a temporary variable which stores the second item to be swapped
+a | Integer or float | This is a temporary variable which stores the first item to be swapped, at index in the list
+b | Integer or float| This is a temporary variable which stores the second item to be swapped
 
 ###Pseudocode for bubble sort
 
