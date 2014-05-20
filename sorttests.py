@@ -15,6 +15,12 @@ class TestSequenceFunctions(unittest.TestCase):
         inlist = [4,3,2,1]
         outlist = [1,2,3,4]
         assert (sorting.bsort(inlist)==outlist) #test 2 fails - list not sorted by bubble sort
-
+    
+    def test3(self):
+        '''Test 2 checks that the bubble sort can sort a list of 4 items reversed.
+        '''
+        inlist = [4,3,2,1]
+        outlist = [1,2,3,4]
+        assert (sorting.ssort(inlist)==outlist) #test 2 fails - list not sorted by bubble sort
 if __name__ == '__main__':
     unittest.main()
