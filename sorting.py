@@ -37,19 +37,21 @@ def ssort(alist):
 
     
 def msort(alist):
+    pass
     '''
     This is another sort algorithm, this is called a merge sort, it recursively seperates and merges the items in a list untill they are sorted
     For each line in this code write a comment explaining what the line does.
     
-    This has some errors
+    
+    
     '''
     
-    if len(alist) >= 1:
+    if len(alist) <= 1:
         return (alist)
  
-    mIndex = len(alist) / 2
-    left = mergeSort(alist[:mIndex])
-    right = mergeSort(alist[mIndex:])
+    mIndex = len(alist) // 2
+    left = msort(alist[:mIndex])
+    right = msort(alist[mIndex:])
  
     result = []
     while len(left) > 0 and len(right) > 0:
@@ -59,8 +61,8 @@ def msort(alist):
             result.append(left.pop(0))
  
     if len(left) > 0:
-        result.extend(mergeSort(left))
+        result.extend(msort(left))
     else:
-        result.extend(mergeSort(right))
+        result.extend(msort(right))
  
     return result
